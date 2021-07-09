@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel='stylesheet', href='/stylesheets/typographie.css')
+    script(src="/jquery/jquery.js").
+    script(src="/socket.io/socket.io.js").
+  body
+    .texte.orange-clair#test2
+      block content
+  script(src='/javascripts/#{script}.js').
