@@ -4,16 +4,18 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
+// routes setup
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+var adminRouter = require("./routes/admin");
+
+const { socketConnexion } = require("./utils/server");
 
 var app = express();
 
+// socket setup
 const httpServer = require("http").createServer(app);
-const options = {
-  /* ... */
-};
-const io = require("socket.io")(httpServer, options);
+socketConnexion(httpServer);
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -25,17 +27,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use("/jquery", express.static(__dirname + "/node_modules/jquery/dist/"));
+
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
-
-// server setting
-io.on("connection", (socket) => {
-  console.log("a user connected");
-});
-
-httpServer.listen(3000, () => {
-  console.log("listening on *:3000");
-});
+app.use("/admin", adminRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

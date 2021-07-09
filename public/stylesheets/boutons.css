@@ -1,0 +1,179 @@
+.bouton {
+  background-color: #A2ADB8;
+  color: #fff;
+  -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+          box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: center;
+  transition: opacity .1s ease, background-color .1s ease, color .1s ease,box-shadow .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
+  margin-bottom: 0.4em;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+}
+
+.bouton.rouge {
+  background-color: #EE4040;
+}
+
+.bouton.rouge-clair {
+  background-color: #F17171;
+}
+
+.bouton.rouge-fonce {
+  background-color: #D64545;
+}
+
+.bouton.vert {
+  background-color: #8BC94D;
+}
+
+.bouton.vert-clair {
+  background-color: #A2D471;
+}
+
+.bouton.vert-fonce {
+  background-color: #7db545;
+}
+
+.bouton.succes {
+  background-color: #8BC94D;
+}
+
+.bouton.echec {
+  background-color: #EE4040;
+}
+
+.bouton.avertissement {
+  background-color: #FF884D;
+}
+
+.bouton.info {
+  background-color: #4DC4FF;
+}
+
+.bouton.default {
+  background-color: #A2ADB8;
+}
+
+.bouton.texte {
+  background-color: transparent !important;
+  color: #A2ADB8;
+}
+
+.bouton.texte.rouge {
+  color: #EE4040;
+}
+
+.bouton.texte.rouge-clair {
+  color: #F17171;
+}
+
+.bouton.texte.rouge-fonce {
+  color: #D64545;
+}
+
+.bouton.texte.vert {
+  color: #8BC94D;
+}
+
+.bouton.texte.vert-clair {
+  color: #A2D471;
+}
+
+.bouton.texte.vert-fonce {
+  color: #7db545;
+}
+
+.bouton.texte.succes {
+  color: #8BC94D;
+}
+
+.bouton.texte.echec {
+  color: #EE4040;
+}
+
+.bouton.texte.avertissement {
+  color: #FF884D;
+}
+
+.bouton.texte.info {
+  color: #4DC4FF;
+}
+
+.bouton.texte.default {
+  color: #A2ADB8;
+}
+
+.bouton.inverse {
+  background-color: transparent !important;
+  border: 2px solid #A2ADB8;
+  color: #A2ADB8;
+}
+
+.bouton.inverse.rouge {
+  color: #EE4040;
+  border: 2px solid #EE4040;
+}
+
+.bouton.inverse.rouge-clair {
+  color: #F17171;
+  border: 2px solid #F17171;
+}
+
+.bouton.inverse.rouge-fonce {
+  color: #D64545;
+  border: 2px solid #D64545;
+}
+
+.bouton.inverse.vert {
+  color: #8BC94D;
+  border: 2px solid #8BC94D;
+}
+
+.bouton.inverse.vert-clair {
+  color: #A2D471;
+  border: 2px solid #A2D471;
+}
+
+.bouton.inverse.vert-fonce {
+  color: #7db545;
+  border: 2px solid #7db545;
+}
+
+.bouton.inverse.succes {
+  color: #8BC94D;
+  border: 2px solid #8BC94D;
+}
+
+.bouton.inverse.echec {
+  color: #EE4040;
+  border: 2px solid #EE4040;
+}
+
+.bouton.inverse.avertissement {
+  color: #FF884D;
+  border: 2px solid #FF884D;
+}
+
+.bouton.inverse.info {
+  color: #4DC4FF;
+  border: 2px solid #4DC4FF;
+}
+
+.bouton.inverse.default {
+  color: #A2ADB8;
+  border: 2px solid #A2ADB8;
+}
+
+.bouton.arrondi {
+  border-radius: 5px;
+}
+/*# sourceMappingURL=boutons.css.map */
